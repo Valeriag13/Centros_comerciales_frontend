@@ -1,0 +1,7 @@
+{
+  "name": "Centros_comerciales_frontend",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
