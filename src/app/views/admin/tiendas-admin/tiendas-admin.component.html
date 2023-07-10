@@ -1,0 +1,46 @@
+<ion-content [fullscreen]="true" class="container">
+  <form  [formGroup]="InsertForm" class="custom-form">
+    <ion-input
+      class="input"
+      formControlName="name"
+      type="text"
+      fill="solid"
+      label="Nombre"
+      labelPlacement="floating"
+      ngModel
+    ></ion-input>
+    <ion-input
+      class="input"
+      formControlName="category"
+      type="text"
+      fill="solid"
+      label="Categoria"
+      labelPlacement="floating"
+    ></ion-input>
+    <ion-input
+      class="input"
+      formControlName="description"
+      type="text"
+      fill="solid"
+      label="Descripcion"
+      labelPlacement="floating"
+    ></ion-input>
+    <ion-input
+      class="input"
+      formControlName="phone"
+      type="text"
+      fill="solid"
+      label="Telefono"
+      labelPlacement="floating"
+    ></ion-input>
+    <ion-input
+      class="input"
+      formControlName="local"
+      type="text"
+      fill="solid"
+      label="Local"
+      labelPlacement="floating"
+    ></ion-input>
+    <ion-button fill="outline" class="button" (click)="onInsert()">Insertar Tienda</ion-button>
+  </form>
+</ion-content>

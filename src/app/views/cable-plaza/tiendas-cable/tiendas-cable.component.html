@@ -1,0 +1,22 @@
+<ion-content [fullscreen]="true" class="container">
+  <ion-grid>
+    <ion-row>
+      <ion-col class="col">
+        <ion-card color="light" class="card" *ngFor="let list of ListaTiendas">
+          <ion-card-header>
+            <ion-card-title>{{list.name}}</ion-card-title>
+            <ion-card-subtitle>Categoria: {{list.category}}</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            {{list.description}} <br>
+            Local: {{list.local}} <br>
+            Telefono: {{list.phone}}
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+
+
