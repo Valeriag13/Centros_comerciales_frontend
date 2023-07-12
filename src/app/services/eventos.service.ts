@@ -3,12 +3,13 @@ import {HttpClient} from '@angular/common/http';
 import { Evento } from '../interfaces/eventos';
 import { Observable } from 'rxjs';
 import { TiendaDelete } from '../interfaces/tiendaDelete';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class EventoService {
-  private URL = 'http://localhost:3000/'
+  private URL = environment.Url
 
   constructor(private http:HttpClient) { }
 

@@ -3,12 +3,13 @@ import {HttpClient} from '@angular/common/http';
 import { Promocion} from '../interfaces/promocion';
 import { Observable } from 'rxjs';
 import { TiendaDelete } from '../interfaces/tiendaDelete';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PromocionService {
-  private URL = 'http://localhost:3000/'
+  private URL = environment.Url
 
   constructor(private http:HttpClient) { }
 

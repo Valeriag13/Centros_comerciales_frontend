@@ -3,12 +3,13 @@ import {HttpClient} from '@angular/common/http';
 import { Tienda } from '../interfaces/tienda';
 import { TiendaDelete } from '../interfaces/tiendaDelete';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TiendaService {
-  private URL = 'http://localhost:3000/'
+  private URL = environment.Url
 
   constructor(private http:HttpClient) { }
 
